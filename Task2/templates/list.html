@@ -1,0 +1,19 @@
+{% for item in data %}
+<li class="collection-item avatar">
+  <i class="material-icons circle green">account_circle</i>
+  <span class="title">{{item.name}}</span>
+  <p>{{item.address.suite}},{{item.address.street}}<br /></p>
+  <p>{{item.address.city}},{{item.address.zipcode}}</p>
+  {%if item.address.city in "Aliyaview Howemouth Gwenborough"%}
+  <hr />
+  <p>
+    The Zipcode and Geo of cityname {{item.address.city}} is:
+    {{item.address.zipcode}} and Lat-{{item.address.geo.lat}} <br />
+    Long-{{item.address.geo.lng}}
+  </p>
+  {%endif%}
+  <a href="#!" class="secondary-content" onclick="getUser({{item.id}})"
+    ><i class="material-icons">info</i></a
+  >
+</li>
+{%endfor%}

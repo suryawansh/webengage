@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- metadata -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2</title>
+    <!-- libraries/packages -->
+    <script src="https://mozilla.github.io/nunjucks/files/nunjucks.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- custom scripts -->
+    <script src="./scripts/app.js"></script>
+    <!-- custom styles -->
+    <link rel="stylesheet" href="./styles/app.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="center"><div class="flow-text">Task 2</div></nav>
+    </header>
+    <main>
+      <br />
+      <br />
+      <br />
+      <div class="container">
+        <div class="row">
+          <div class="col s6">
+            <ul class="collection block scrollable" id="userList">
+              <li class="collection-item avatar">
+                Please wait while we load the content...
+              </li>
+            </ul>
+          </div>
+          <div class="col s6">
+            <div class="card scrollable block">
+              <div class="card-content">
+                <span class="card-title">User Details</span>
+                <p id="outputDiv" class="left">
+                  Click the button beside a user to get more info on them
+                </p>
+                <br />
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-weight: 600;
+}
+h4 {
+  font-weight: 400;
+}
+button {
+  font-weight: 500;
+  font-size: 50px;
+}
+.fullwidth {
+  width: 100% !important;
+}
+
+input {
+  border-radius: 0 0 0 0 !important;
+  border: 2px solid #000 !important;
+  text-indent: 20px;
+}
+input::placeholder {
+  font-weight: 300;
+  color: #000;
+}
+
+select#code option {
+  background-size: 100% 100%;
+}
+select#code option[value="+91"] {
+  background-image: url(../assets/india.png);
+}
+select#code option[value="+91"] {
+  background-image: url(../assets/usa.png);
+}

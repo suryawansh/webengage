@@ -1,0 +1,14 @@
+{% if ".biz" in email%}
+    Name - <span> {{name}} </span>
+    <br />Email - <span> {{email}} </span> 
+{%else%} 
+    {% if id%2==0%}
+        Username - <span> {{username}} </span>
+        <br />Name - <span> {{name}} </span>
+        <br />Email - <span> {{email}} </span>
+    {%else%}
+        <br /><span> I'm Odd </span>
+    {%endif%}
+{%endif%}
+{% set len = ((company.catchPhrase | slice(15))|join) %}
+<br/>CatchPhrase - {{len}}

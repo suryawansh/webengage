@@ -1,0 +1,12 @@
+body {
+  overflow: hidden;
+}
+.scrollable {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.block {
+  max-height: 350px !important;
+  height: 350px;
+}

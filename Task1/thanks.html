@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- metadata -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1: Thank you page</title>
+    <!-- libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <!-- custom styles -->
+    <link rel="stylesheet" href="./styles/app.css" />
+    <!-- custom scripts -->
+    <script>
+        window.onload = ()=>{
+          const urlParams = new URLSearchParams(window.location.search);
+          const email = urlParams.get('email');
+          const code = urlParams.get('code');
+          const phone = urlParams.get('phone');
+          let html = `Thanks a ton for taking out your precious time to complete the survey<br/><br/>
+          Email Address - ${email}<br/><br/>
+          Contact Number - ${code}-${phone}`
+          document.getElementById("message").innerHTML=html
+        }
+    </script>
+  </head>
+  <body>
+    <div class="container row">
+      <div class="row hide-on-small-only">
+        <br/>
+        <br/>
+        </div>
+          <div class="col s12">
+            <img src="./assets/logo.png " height="75px" width="250px" />
+          </div>
+          <br/>
+          <div class="col s12">
+            <h1>Thank You</h1>
+            <h5 id="message"></h5>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
